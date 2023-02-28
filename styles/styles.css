@@ -2,6 +2,13 @@ body {
     background-color: black;
 }
 
+nav {
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+
+}
+
 
 .nav-bar {
     margin-top: 65px;
@@ -9,6 +16,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -26,6 +34,14 @@ body {
     color: #FFFFFF;
 }
 
+.nav-dots {
+    bottom: 20px;
+    position: absolute;
+    width: 60px;
+    right: 0;
+    visibility: hidden;
+}
+
 
 .list {
     width: 276px;
@@ -35,7 +51,7 @@ body {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
     /* identical to box height, or 140% */
     color: #FFFFFF;
@@ -109,7 +125,11 @@ p {
 }
 
 
+
+
+
 @media screen and (max-width: 768px) {
+
 
     .list {
         display: flex;
@@ -151,25 +171,59 @@ p {
 
 @media screen and (max-width: 320px) {
 
-    /*.list {
-        display: flex;
-        justify-content: space-around;
+
+    nav {
+        margin-left: 50px;
+        margin-bottom: 50px;
     }
-    */
+
+    .nav-bar {
+        max-width: 144px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .nav-dots {
+        visibility: visible;
+        position: absolute;
+    }
+
+
+    .list {
+        visibility: hidden;
+    }
+
+
+    .head-logo {
+        font-size: 26px;
+    }
 
     .header-section {
-        margin-top: 100px;
+        margin-top: 20px;
+        margin-left: 45px;
         max-width: 320px;
         width: 100%;
+
     }
 
     h1 {
         font-size: 36px;
     }
 
-    .main-info {}
 
+    .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 114px;
+        height: 90px;
+    }
 
+    .main-info {
+        width: 217px;
+        margin-top: 5px;
+    }
 
     p {
         font-size: 12px;
@@ -177,22 +231,27 @@ p {
     }
 
     .img-container {
+        margin-left: 50px;
+        margin-top: 57px;
         display: flex;
         justify-content: flex-end;
         max-width: 320px;
         width: 100%;
 
+
+
     }
 
     .img-desktop {
         display: flex;
-        justify-content: flex-end;
-        max-width: 217px;
-        width: 100%;
+        justify-content: center;
+        width: 256px;
+        ;
     }
 
     .mountain {
         width: 256px;
         height: 284px;
     }
+
 }
