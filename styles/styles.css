@@ -58,6 +58,26 @@ nav {
 
 }
 
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+a:active {
+    color: grey;
+    text-decoration: none;
+}
+
 
 .header-section {
     max-width: 1440px;
