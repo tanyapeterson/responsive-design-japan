@@ -44,12 +44,20 @@ body {
 
 
 .header-section {
-    width: 265px;
-    height: 102px;
+    max-width: 1440px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    border: 1px solid white;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+.main-header {
+    max-width: 265px;
+    width: 100%;
+    display: flex;
+}
+
 
 
 h1 {
@@ -64,17 +72,16 @@ h1 {
 }
 
 
-
 .main-info {
-    border: 1px solid white;
+    display: flex;
+    margin-top: 28px;
     max-width: 574px;
     width: 100%;
 }
 
 
 
-.main-info-text {
-
+p {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
@@ -86,21 +93,106 @@ h1 {
 
 }
 
-
-.main-section {
+.img-container {
     max-width: 1440px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border: 1px solid red;
-}
-
-
-
-.img-container {
-    border: 1px solid aqua;
     margin-top: 45px;
     display: flex;
     justify-content: center;
+}
+
+.img-desktop {
+    display: flex;
+    justify-content: center;
+    width: 864px;
+    height: 486px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-section {
+        margin-top: 100px;
+        max-width: 768px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 768px;
+        width: 100%;
+
+    }
+
+    .img-desktop {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 574px;
+        width: 100%;
+    }
+
+    .mountain {
+        width: 617px;
+        height: 512px;
+        margin-right: 76px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    /*.list {
+        display: flex;
+        justify-content: space-around;
+    }
+    */
+
+    .header-section {
+        margin-top: 100px;
+        max-width: 320px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .main-info {}
+
+
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 320px;
+        width: 100%;
+
+    }
+
+    .img-desktop {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 217px;
+        width: 100%;
+    }
+
+    .mountain {
+        width: 256px;
+        height: 284px;
+    }
 }
